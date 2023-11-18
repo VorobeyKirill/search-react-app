@@ -16,7 +16,6 @@ export const Search = () => {
     const requestSearchResults = async (searchValue: string) => {
         // requesting media results by search query
         const response = await fetch (`${SEARCH_API_URL}/search?query="${searchValue}"`);
-
         const mediaDataJSON = await response.json();
 
         setMediaResults(mediaDataJSON.media);
@@ -25,7 +24,7 @@ export const Search = () => {
     return (
         <>
             <SearchBar handleSearchBarSubmit={handleSearchBarSubmit} />
-            {mediaResults && <SearchResults />}
+            {mediaResults && <SearchResults mediaResults={mediaResults} />}
         </>
     );
 };
