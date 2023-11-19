@@ -1,0 +1,31 @@
+.search-bar__form {
+    background-color: #F4F3F0;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.search-bar__input {
+    position: relative;
+    height: 70px;
+    width: 80%;
+    top: 65px;
+    border: 1px solid #48474D;
+    padding-left: 15px;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.search-bar__clear-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 85px;
+    right: calc(10% + 15px)
+}
