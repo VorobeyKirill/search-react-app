@@ -14,7 +14,7 @@ export interface IMedia {
     height: number;
     keywords: string;
     licencelanguagepointer: string;
-    licenstype: string;
+    licensetype: string;
     masterimage: unknown;
     mediaReference: IMediaReference;
     mediaid: number;

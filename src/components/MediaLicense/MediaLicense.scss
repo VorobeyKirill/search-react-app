@@ -1,0 +1,87 @@
+.media-license__title {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.media-license-container {
+    margin-top: 20px;
+    background-color: #EAE7E2;
+}
+
+.license-type-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.license-type__price-prefix {
+    font-size: 14px;
+    color: #A3A3A6;
+}
+
+.media-license__divider {
+    display: block;
+    width: 100%;
+    border-bottom: 0.58px solid #A3A3A6;
+}
+
+.license-list {
+    list-style: none;
+    padding: 16px;
+    margin: 0;
+}
+
+.license-list__option {
+    display: flex;
+    justify-content: space-between;
+}
+
+.license-option__input {
+    box-sizing: border-box;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #fff;
+    outline: 1px solid #48474D;
+    width: 20px;
+    height: 20px;
+}
+
+.license-option__input:checked {
+    background-color: #00F5F5
+}
+
+.license-option__label {
+    margin-left: 16px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.license-option__price {
+    line-height: 30px;
+}
+
+.license-list__divider {
+    margin: 16px 0;
+    display: block;
+    border: 0.58px solid #48474D;
+}
+
+.media-license-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.media-license__add-button, .media-license__buy-button {
+    height: 36px;
+    width: 48%;
+    border: 1px solid #141414;
+    background-color: #fff;
+}
+
+.media-license__buy-button {
+    background-color: #00F5F5;
+}

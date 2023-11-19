@@ -17,8 +17,6 @@ export const Media = () => {
                 const response = await fetch(`${SEARCH_API_URL}/media/${mediaId}`);
                 const responseData = await response.json();
 
-                console.log(responseData);
-
                 setMediaData(responseData);
             } catch {
                 setMediaData(null);
