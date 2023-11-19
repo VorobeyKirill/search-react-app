@@ -7,20 +7,22 @@ interface IMediaLicenseProps {
 };
 
 export const MediaLicense = ({ mediaData }: IMediaLicenseProps) => {
+    const { licensetype, usagelicences } = mediaData;
+
     return (
         <>
             <h4 className="media-license__title">Choose your License</h4>
             <div className="media-license-container">
                 <div className="license-type-container">
-                    <span className="license-type__name">{mediaData.licensetype}</span>
+                    <span className="license-type__name">{licensetype}</span>
                     <span className="license-type__price">
                         <span className="license-type__price-prefix">from</span>&nbsp;
-                        {mediaData.usagelicences[0].price} {mediaData.usagelicences[0].currency}
+                        {usagelicences[0].price} {usagelicences[0].currency}
                     </span>
                 </div>
                 <span className="media-license__divider"></span>
                 <ul className="license-list">
-                    {mediaData.usagelicences.map((license, index) => (
+                    {usagelicences.map((license, index) => (
                         <li key={license.licenseid}>
                             <div className="license-list__option">
                                 <div>
@@ -29,7 +31,7 @@ export const MediaLicense = ({ mediaData }: IMediaLicenseProps) => {
                                 </div>
                                 <span className="license-option__price">{license.price} {license.currency}</span>
                             </div>
-                            {index !== mediaData.usagelicences.length - 1 &&
+                            {index !== usagelicences.length - 1 &&
                                 <span className="license-list__divider"></span>
                             }
                         </li>
