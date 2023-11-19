@@ -1,8 +1,8 @@
 import { FormEvent, useState } from "react";
-import { SearchBar } from "../components/SearchBar/SearchBar";
-import { SEARCH_API_URL } from "../constants";
-import { SearchResults } from "../components/SearchResults/SearchResults";
-import { IMediaPreview } from "../types";
+import { SearchBar } from "../../components/SearchBar/SearchBar";
+import { SEARCH_API_URL } from "../../constants";
+import { SearchResults } from "../../components/SearchResults/SearchResults";
+import { IMediaPreview } from "../../types";
 
 export const Search = () => {
     const [mediaResults, setMediaResults] = useState<IMediaPreview[] | null>(null);

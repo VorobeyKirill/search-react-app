@@ -6,8 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Search } from './pages/Search.page';
-import { Media } from './pages/Media.page';
+import { Search } from './pages/SearchPage/Search.page';
+import { Media } from './pages/MediaPage/Media.page';
 
 const router = createBrowserRouter([
   {

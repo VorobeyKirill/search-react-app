@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { SEARCH_API_URL } from "../constants";
-import { IMedia } from "../types";
-import { MediaLicense } from "../components/MediaLicense/MediaLicense";
-import { MediaInfo } from "../components/MediaInfo/MediaInfo";
+import { SEARCH_API_URL } from "../../constants";
+import { IMedia } from "../../types";
+import { MediaLicense } from "../../components/MediaLicense/MediaLicense";
+import { MediaInfo } from "../../components/MediaInfo/MediaInfo";
+
+import "./Media.page.scss";
 
 export const Media = () => {
     const { mediaId } = useParams();
