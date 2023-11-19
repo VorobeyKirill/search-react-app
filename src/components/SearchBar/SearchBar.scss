@@ -7,8 +7,9 @@
 
 .search-bar__input {
     position: relative;
+    box-sizing: border-box;
     height: 70px;
-    width: 80%;
+    width: 90%;
     top: 65px;
     border: 1px solid #48474D;
     padding-left: 15px;
@@ -27,5 +28,5 @@
     border: 0;
     cursor: pointer;
     top: 85px;
-    right: calc(10% + 15px)
+    right: calc(5% + 15px)
 }

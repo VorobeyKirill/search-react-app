@@ -1,0 +1,22 @@
+.search-results-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+    list-style: none;
+    margin-left: 5%;
+    padding: 0;
+}
+
+.searc-results-list__item {
+    flex-grow: 1;
+    height: 360px;
+    cursor: pointer;
+}
+
+.searc-results-item__image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
